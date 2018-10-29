@@ -4,12 +4,12 @@
 
 body{
     background-color: grey;
-    height: 100%;
+   
 }
 header{
     border-style: solid;
     width: 100%;
-    height: 10%;
+ 
     border-radius: 25px;
     border-color: yellow;
     background-color: lightyellow;
@@ -72,7 +72,7 @@ footer{
     clear: both;
     border-style: solid;
     width: 100%;
-    height: 10%;
+  
     border-radius: 25px;
     border-color: yellow;
     background-color: lightyellow;

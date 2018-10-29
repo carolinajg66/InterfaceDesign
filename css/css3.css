@@ -5,11 +5,8 @@
 
 .container{
     display: grid;
-    width: 100%;
-    height:100%;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto auto;
-    grid-gap: 1em;
     grid-template-areas:
     "header header header "
     "aside main main "
@@ -18,24 +15,9 @@
 
 }
 
-/*.container{
-
-    display: grid;
-    width: 100%;
-    height:100%;
-    grid-template-rows: auto auto;
-    grid-template-columns: auto auto auto;
-    grid-gap: 1rem;
-    grid-template-areas:
-      "header header header"
-      "aside main main"
-      "footer footer footer";
-}*/
-
-
 body{
     background-color: grey;
-    height: 100%;
+  
 }
 
 header{
@@ -60,9 +42,18 @@ main{
     border-style: solid;
     border-radius: 25px;
     background-color: lightgreen;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "h1 h1 h1 "
+    "section section nav "
+    "article article . ";
+
    
 }
 section{
+    grid-area: section;
     border-style: solid;
     border-radius: 25px;
     background-color: aqua;
@@ -72,6 +63,7 @@ section{
 }
 
 article{
+    grid-area: article;
     border-style: solid;
     border-radius: 25px;
     background-color: aqua;
@@ -79,6 +71,7 @@ article{
 }
 /*MENU DE NAVEGACION PEQUEÑO*/
 nav{
+    grid-area: nav;
     border-style: solid;
     border-radius: 25px;
     background-color: khaki;
