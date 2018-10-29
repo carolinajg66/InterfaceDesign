@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: grey;
+    height: 100%;
+}
+header{
+    border-style: solid;
+    width: 100%;
+    height: 10%;
+    border-radius: 25px;
+    border-color: yellow;
+    background-color: lightyellow;
+
+    
+
+
+}
+
+aside{
+    clear: both;
+    border-style: solid;
+    width: 25%;
+    border-radius: 25px;
+    background-color: mediumpurple;
+    float: left;
+
+}
+
+main{
+    border-style: solid;
+    width: 75%;
+    border-radius: 25px;
+    background-color: lightgreen;
+    float: right;
+    height: 40%;
+
+
+
+}
+section{
+    border-style: solid;
+    border-radius: 25px;
+    background-color: aqua;
+    width: 80%;
+    float: left;
+
+}
+
+article{
+    border-style: solid;
+    border-radius: 25px;
+    background-color: aqua;
+    width: 80%;
+    float: left;
+
+
+}
+nav{
+    border-style: solid;
+    width: 20%;
+    border-radius: 25px;
+    background-color: khaki;
+    float: right;
+
+
+}
+
+footer{
+    clear: both;
+    border-style: solid;
+    width: 100%;
+    height: 10%;
+    border-radius: 25px;
+    border-color: yellow;
+    background-color: lightyellow;
+  
+
+
+}

@@ -1,0 +1,62 @@
+/*grid*/
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    width: 100%;
+    height:100%;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 1em;
+    grid-template-areas:
+    "header header header header "
+    "main   main   main   main "
+    "main   main   main   main "
+    "footer footer footer footer ";
+
+}
+
+
+
+header{
+    grid-area: header;
+    border-style: solid;
+    border-color: black;
+ 
+   
+}
+
+
+main{
+    grid-area: main;
+    border-style: solid;
+    border-color: black;
+   
+}
+
+footer{
+    grid-area: footer;
+    border-style: solid;
+    border-color: black;
+  
+}
+
+/*-----IMAGEN TITULO CON TEXTO--------*/
+div, img {
+    display: block;
+    position: relative;		
+    width: 300px;
+  }
+  
+  div p {
+    background-color: rgba(255,255,255,.8);
+    display: block;
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    padding: 5px;
+    width: 100%;
+  }
+/*--------------------------------*/
