@@ -5,36 +5,32 @@
 
 .container{
     display: grid;
-
     grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto;
-    grid-gap: 1em;
+    grid-template-rows: auto auto auto auto auto;
     grid-template-areas:
     "header header header header "
+    "nav    nav    nav    nav"
     "main   main   main   main "
     "main   main   main   main "
     "footer footer footer footer ";
 
 }
+body,h1, header{
+    margin: 0;
+    padding: 0;
+
+}
 
 h1{
-    font-size: 6;
+    font-size: 3em;
+    color: white;
 }
-
-
-#grad1 {
-    background-color: red; /* For browsers that do not support gradients */
-    background-image: linear-gradient(#0AE6DF, #150BE1); 
-}
-
-
 
 header{
     grid-area: header;
-    border-style: solid;
-    border-color: black;
- 
-   
+    background-color:#263140;
+
+
 }
 
 
@@ -50,6 +46,13 @@ footer{
     border-style: solid;
     border-color: black;
   
+}
+
+nav{
+    margin: 0;
+    padding: 0;
+    grid-area: nav;
+    background-color: grey;
 }
 
 /*-----IMAGEN TITULO CON TEXTO--------
