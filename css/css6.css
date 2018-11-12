@@ -1,120 +1,17 @@
-/***PRUEBA DE MENU HAMBURGUESA*****/
-/*
-       .-.
-     (___________________________()6 `-,
-     (   ______________________   /''"`
-     //\\                      //\\
-     "" ""                     "" ""
-
-
-     ______________________ _______  ___________   _____   ________    _________    _____    _______________ ___  _________________________________________ ________   
-\__    ___/\_   _____/ \      \ \_   _____/  /     \  \_____  \  /   _____/   /  _  \   \__    ___/    |   \ \______   \_   _____/\______   \______   \\_____  \  
-  |    |    |    __)_  /   |   \ |    __)_  /  \ /  \  /   |   \ \_____  \   /  /_\  \    |    |  |    |   /  |     ___/|    __)_  |       _/|       _/ /   |   \ 
-  |    |    |        \/    |    \|        \/    Y    \/    |    \/        \ /    |    \   |    |  |    |  /   |    |    |        \ |    |   \|    |   \/    |    \
-  |____|   /_______  /\____|__  /_______  /\____|__  /\_______  /_______  / \____|__  /   |____|  |______/    |____|   /_______  / |____|_  /|____|_  /\_______  /
-                   \/         \/        \/         \/         \/        \/          \/                                         \/         \/        \/         \/ 
-*/
-/*
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-}
-li{
-    display: inline-block;
-    margin-right: 1px;
-}
-
-li ul{
-    display: none;
-}
-li ul li{
-    display: block;
-}
-
-li ul li a{
-    width: auto;
-    min-width: 100px;
-    padding: 0 20px;
-}
-
-ul li a:hover {
-display: block;
-background: plum;
-}
-
-li a{
-    display: block;
-    min-width: 130px;
-    text-align: center;
-    color: black;
-    text-decoration: none;
-    background: plum;
-}
-li:hover a{
-    background: purple; 
-}
-li:hover ul a{
-    height: 27px;
-    line-height: 27px;
-    background: purple;
-    color: #fff;
-}
-li:hover ul a:hover{
-    background: purple;
-    color: #fff;
-}
-
-.show-menu{
-    display: none;
-}
-
-input[type=checkbox]{
-    display: none;
-}
-input[type=checkbox]:checked ~ #menu{
-    display: block;
-}
-
-@media screen and (max-width:720px){
-    .nav{
-        text-align: right;
-    }
-    ul{
-        display: none;
-    }
-    ul li, li a{
-        width: 100%;
-    }
-    li ul li{
-        float: left;
-    }
-    .show-menu{
-        display: block;
-    }
-    .show-menu::after{
-        content: url(../Images/burger_icon.png);
-    }
-}
-*/
-
-/*Strip the ul of padding and list styling*/
-
-/*Strip the ul of padding and list styling*/
+/*** MENU HAMBURGUESA*****/
 ul {
     list-style-type:none;
     margin:0;
     padding:0;
     position: absolute;
 }
-/*Create a horizontal list with spacing*/
+
 li {
     display:inline-block;
     float: left;
     margin-right: 1px;
 }
-/*Style for menu links*/
+
 li a {
     display:block;
     min-width:140px;
@@ -157,44 +54,42 @@ li ul li a {
     min-width: 100px;
     padding: 0 20px;
 }
-/*Display the dropdown on hover*/
-ul li a:hover + .hidden, .hidden:hover {
+
+ul li a:hover /*+ .hidden, .hidden:hover */{
     display: block;
 }
-/*Style 'show menu' label button and hide it by default*/
+
 .show-menu {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-decoration: none;
-    color: #fff;
-    background: #19c589;
+    color: white;
+    background: grey; /*SE CAMBIARA EL COLOR AL DE EL HEADER*/
     text-align: center;
     padding: 10px 0;
     display: none;
 }
-/*Hide checkbox*/
+
 input[type=checkbox]{
     display: none;
 }
-/*Show menu when invisible checkbox is checked*/
+
 input[type=checkbox]:checked ~ #menu{
     display: block;
 }
+
 /*Responsive Styles*/
 @media screen and (max-width : 760px){
-    /*Make dropdown links appear inline*/
+
     ul {
         position: static;
         display: none;
     }
-    /*Create vertical spacing*/
     li {
         margin-bottom: 1px;
     }
-    /*Make all menu links full width*/
     ul li, li a {
         width: 100%;
     }
-    /*Display 'show menu' link*/
     .show-menu {
         display:block;
     }
