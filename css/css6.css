@@ -14,43 +14,44 @@ li {
 
 li a {
     display:block;
-    min-width:140px;
-    height: 50px;
+    min-width:140px; 
+    height: 40px;
     text-align: center;
-    line-height: 50px;
+    /*line-height: 50px;*/
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #fff;
-    background: #2f3036;
+    color: white;
+    background: grey;
     text-decoration: none;
 }
-/*Hover state for top level links*/
+
 li:hover a {
-    background: #19c589;
+    background: #111;
 }
-/*Style for dropdown links*/
+
 li:hover ul a {
-    background: #f3f3f3;
-    color: #2f3036;
+    background: white;
+   /* color: #2f3036;*/
     height: 40px;
     line-height: 40px;
 }
-/*Hover state for dropdown links*/
+
 li:hover ul a:hover {
-    background: #19c589;
-    color: #fff;
+    background: #111;
+    color: white;
 }
-/*Hide dropdown links until they are needed*/
+
 li ul {
     display: none;
 }
-/*Make dropdown links vertical*/
+
 li ul li {
     display: block;
     float: none;
 }
-/*Prevent text wrapping*/
+
 li ul li a {
     width: auto;
+    /*width: 100%;*/
     min-width: 100px;
     padding: 0 20px;
 }
@@ -76,6 +77,11 @@ input[type=checkbox]{
 input[type=checkbox]:checked ~ #menu{
     display: block;
 }
+.active {
+    background-color: darkblue;
+
+}
+
 
 /*Responsive Styles*/
 @media screen and (max-width : 760px){
@@ -94,6 +100,9 @@ input[type=checkbox]:checked ~ #menu{
         display:block;
     }
     .show-menu::after{
-        content: url(../Images/burger_icon.png);
+        content: url(../Images/burger_icon3.png);
+    }
+    nav{
+        width: 20%;
     }
 }
