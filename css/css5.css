@@ -58,35 +58,7 @@ nav{
 }
 
 
-/*------hORIZONTAL MENU 1--------*/
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
- 
-}
-
-li a {
-    display: block;
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-.active {
-    background-color: darkblue;
-
-}
-
-li a:hover {
-    background-color: #111;
-}
-
-
-
-/*--------------------------*/
-
-/*VERTICAL MENU*/
+/*-----VERTICAL MENU------------------------------------------------------------------------*/
 .vertical-menu {
     background-color:#263140;
    
@@ -106,37 +78,8 @@ li a:hover {
 header{
    display: none;
 }
+/*--- END VERTICAL MENU-----------------------------------------------------------------------*/
 
-/***MENU HORIZONTAL HAMBURGUESA*******/
-
-.show-menu{
-    display: none;
-}
-input[type=checkbox]{display: none;}
-input[type=checkbox]:checked ~ #menu{display: block;}
-
-.nav1{
-    text-align: right;
-}
-ul{
-    display: none;
-}
-ul,li,li a{
-    width: 100%;
-}
-li ul li{
-    float: left;
-}
-.show-menu{
-    display: block;
-}
-.show-menu::after{content: url( " ")}
-
-
-/******************************/
-
-
-/*------------------------------*/
 
 @media screen and (min-width:500px){
     
@@ -144,7 +87,6 @@ li ul li{
         display: grid;
         grid-template-columns: auto auto ;
         grid-auto-rows: auto;
-        /*grid-template-rows: auto auto auto auto auto auto;*/
         grid-template-areas:
         "header header "
         "nav    nav "
@@ -153,33 +95,7 @@ li ul li{
         "aside aside"
         "footer footer";
     }
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-    
-    li {
-        float: left;
-    }
-    
-    li a {
-        display: inline-block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-    
-    li a:hover {
-        background-color: #111;
-    }
-    
-    .active {
-        background-color: darkblue;
-    }
- 
+
     header{
         display: block;
     }
@@ -191,7 +107,6 @@ li ul li{
         display: grid;
         grid-template-columns: auto auto auto auto;
         grid-auto-rows: auto;
-        /*grid-template-rows: auto auto auto auto auto;*/
         grid-template-areas:
         "header header header header "
         "nav    nav    nav    nav"
@@ -200,32 +115,7 @@ li ul li{
         "footer footer footer footer ";
     
     }
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-    
-    li {
-        float: left;
-    }
-    
-    li a {
-        display: inline-block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-    
-    li a:hover {
-        background-color: #111;
-    }
-    
-    .active {
-        background-color: darkblue;
-    }
+
     header{
         display: block;
     }

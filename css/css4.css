@@ -2,15 +2,6 @@
 *{
     box-sizing: border-box;
 }
-.container{
-    display: grid;
-    grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "footer";
-
-}
 
 
 body,h1, header{
@@ -34,8 +25,8 @@ header{
 
 main{
     grid-area: main;
-    /*border-style: solid;
-    border-color: black;*/
+    margin-top: 60px;
+ 
    
 }
 
@@ -55,123 +46,12 @@ nav{
 }
 
 
-
-/*------Enlaces--------*/
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
- 
-}
-
-li a {
-    display: block;
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-.active {
-    background-color: darkblue;
-
-}
-
-li a:hover {
-    background-color: #111;
-}
-header{
-    display: none;
-}
-
-/*--------------------------*/
-
 @media screen and (min-width:500px){
     
-    .container{
-        display: grid;
-        grid-template-columns: auto auto ;
-        /*grid-template-rows: auto auto auto auto auto;*/
-        grid-template-areas:
-        "header header "
-        "nav    nav "
-        "main   main"
-        "main   main"
-        "footer footer";
-    }
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-    
-    li {
-        float: left;
-    }
-    
-    li a {
-        display: inline-block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-    
-    li a:hover {
-        background-color: #111;
-    }
-    
-    .active {
-        background-color: darkblue;
-    }
+   
     header{
         display:block;
     }
     
    
 }
-/*
-@media screen and (min-width:700px){
-    
-    .container{
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-       // grid-template-rows: auto auto auto auto auto;
-        grid-template-areas:
-        "header header header header "
-        "nav    nav nav nav"
-        "main   main main main"
-        "main   main main main"
-        "footer footer footer footer";
-    
-    }
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-    
-    li {
-        float: left;
-    }
-    
-    li a {
-        display: inline-block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-    
-    li a:hover {
-        background-color: #111;
-    }
-    
-    .active {
-        background-color: darkblue;
-    }
-   
- 
-}
-*/
