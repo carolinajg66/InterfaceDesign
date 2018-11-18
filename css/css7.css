@@ -1,0 +1,15 @@
+#code{
+    width: 90%;
+    height: 10em;
+    padding: 10px;
+    border: 1px solid #0095dd;
+
+}
+
+
+#boxModel{
+    width: 320px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0; 
+}
