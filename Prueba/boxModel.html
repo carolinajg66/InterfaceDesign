@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 1</title>
     <link rel="stylesheet" type="text/css" href="../css/css5.css" />
-    <link rel="stylesheet" type="text/css" href="../css/css6.css" /> 
+    <link rel="stylesheet" type="text/css" href="../css/css6.css" />
     <link rel="stylesheet" type="text/css" href="../css/css7.css" />
 </head>
 
@@ -29,37 +29,58 @@
         </nav>
         <main class="main">
             <h2>Box Model</h2>
-            <p>The CSS box model describes the rectangular boxes that are generated for elements in the document tree. </p>
+            <hr>
+            <p>Every piece of content on a web page, or in other words, every HTML element is formed by a rectangle.
+                Each of these rectangles has 5 main aspects that it's built around. They are:<br>
+                -Width<br>
+                -Height<br>
+                -Padding<br>
+                -Border<br>
+                -Margin<br>
 
-            <table>
-                <tr>
-                    <td>
-                        <h3>HTML</h3>
-                        <textarea readonly id="code">
-                            <div>Este es un ejemplo de box model </div> 
-                        </textarea>
-                    </td>
-                    <td>
-                        <h3>CSS</h3>
-                        <textarea readonly id="code">
-                                div {
-                                    width: 320px;
-                                    padding: 10px;
-                                    border: 5px solid gray;
-                                    margin: 0; 
-                                } 
-                        </textarea>
-                    </td>
-                    <td>
-                       
-                        <div id="boxModel" class="code">Este es un ejemplo de box model </div> 
-                    </td>
-                </tr>
-
-            </table>
-
+                All of these five aspects determine the size, position, and presentation of an element. Thanks to CSS,
+                we can control all of these to make an element appear on a web page exactly the way we want.</p>
 
             
+            <h3>The width</h3>
+            <p>The width is simply the width of an element, the amount of space an element takes from left to
+                right.
+                By default, the width of a block-level element is 100% of its container.</p>
+
+            <h3>The Height</h3>    
+            <p>Just like width, height is also the size of an element, but in the vertical direction. 
+                The div that we created have a height of one character. Because we technically have a character in it.</p>
+
+            <h3>The Border</h3>    
+            <p>It lets us put a border around our main content. It’s optional. But even though you may or may not have a border,
+                 according to CSS box model, every single element still have a border. You’re not using any border just means that
+                  the border value of your element is zero.</p>
+            
+            <h3>Padding</h3>
+            <p>Padding is the space between your content and border. Padding plays important roles in the visual design of elements. 
+                They make content easily understandable to the users. They also help to create space between elements. </p>
+
+            <h3>The Margin</h3>
+            <p>Margin is the space between different elements. That is, if you have a certain space declared as a margin of your element,
+                 no other element can sit in that space. Even though this space is situated outside of your element.</p>
+            <h3>Ejemplo: </h3>
+        
+            <h4>HTMML</h4>
+            <textarea readonly id="ejemploUno">
+                        <div>Este es un ejemplo de box model </div> 
+            </textarea>
+            <h4>CSS</h4>
+            <textarea readonly id="ejemploUno">
+                    div {
+                        width: 320px;
+                        padding: 10px;
+                        border: 5px solid gray;
+                        margin: 0; 
+                    } 
+            </textarea>
+            <h4>Output</h4>
+            <div id="boxModel">Este es un ejemplo de box model </div>
+
         </main>
         <aside>
             <div class="vertical-menu">

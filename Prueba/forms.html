@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" type="text/css" href="../css/css5.css" />
+    <link rel="stylesheet" type="text/css" href="../css/css6.css" />
+    <link rel="stylesheet" type="text/css" href="../css/css7.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <header id="grad1" class="header">
+            <h1>CsS</h1>
+        </header>
+        <nav class="nav1">
+            <label for="show-menu" class="show-menu"></label>
+            <input type="checkbox" id="show-menu" role="button">
+
+            <ul id="menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#">Enlace 1</a></li>
+                <li><a href="#">Enlace 2</a></li>
+                <li><a href="#">Enlace 3</a></li>
+            </ul>
+        </nav>
+        <main class="main">
+            <h2>Forms</h2>
+            <hr>
+            <p>The forms are those that will gather information from the user.
+                Form elements are different types of input elements, such as text fields, check boxes, radio buttons,
+                send buttons ...</p>
+
+            <h3>The &lt;input&gt; element</h3>
+            <p>The &lt;input&gt; element is the most important element.
+
+                It can be displayed in several ways, depending on the type attribute.</p>
+
+            <h3>Styling Input Fields</h3>
+            <p>Defines a one-line input field for text input:</p>
+            <h4>Ejemplo</h4>
+            <p><strong>HTML</strong></p>
+            <textarea id="ejemploDos" readonly>
+                    <form>
+                            <label for="fname">First Name</label><input type="text" id="fname" name="fname">
+                            <label for="lname">Last Name</label><input type="text" id="lname" name="lname">
+                    </form>
+            </textarea>
+            <br>
+            <p><strong>CSS</strong></p>
+            <textarea id="ejemploDos" readonly>
+                    input[type=text] {
+                        width: 50%;
+                        padding: 12px 20px;
+                        margin: 8px 0;
+                        box-sizing: border-box;
+                    }
+            </textarea>
+
+            <p><strong>Output</strong></p>
+            <form id="ejemploTres">
+                <label for="fname">First Name</label><input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last Name</label><input type="text" id="lname" name="lname">
+            </form>
+
+            <h4>Bordered Inputs</h4>
+            <p>Use the border property to change the border size and color, and use the border-radius property to add
+                rounded corners.</p>
+            <p><strong>HTML</strong></p>
+            <textarea id="ejemploDos" readonly>
+                    <form>
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="fname">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lname">
+                    </form>
+            </textarea>
+            <p><strong>CSS</strong></p>
+            <textarea id="ejemploDos" readonly>
+                    width: 50%;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    box-sizing: border-box;
+                    border: none;
+                    border-bottom: 2px solid red;
+
+            </textarea>
+            <p><strong>Output</strong></p>
+            <form id="ejemploCuatro">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname"> <br>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname">
+            </form>
+        </main>
+        <aside>
+            <div class="vertical-menu">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 4</a>
+            </div>
+        </aside>
+        <footer>
+            <p>Posted by: Ana Carolina Justiniano</p>
+            <p>Contact information: <a href="mailto:carolinajustinianoguzman@gmail.com">carolinajustinianoguzman@gmail.com</a></p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
