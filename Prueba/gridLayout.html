@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" type="text/css" href="../css/css5.css" />
+    <link rel="stylesheet" type="text/css" href="../css/css6.css" />
+    <link rel="stylesheet" type="text/css" href="../css/css8.css" />
+
+</head>
+
+<body>
+    <div class="container">
+
+        <header id="grad1" class="header">
+            <h1>CsS</h1>
+        </header>
+        <nav class="nav1">
+            <label for="show-menu" class="show-menu"></label>
+            <input type="checkbox" id="show-menu" role="button">
+
+            <ul id="menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#">Enlace 1</a></li>
+                <li><a href="#">Enlace 2</a></li>
+                <li><a href="#">Enlace 3</a></li>
+            </ul>
+        </nav>
+        <main class="main">
+            <h2>Grid Layout</h2>
+            <hr>
+            <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to
+                design web pages without having to use floats and positioning.<br>
+                A grid layout consists of a parent element, with one or more child elements. An HTML element becomes a
+                grid container by setting the display property to grid or inline-grid.</p>
+
+
+            <h4>HTMML</h4>
+            <textarea readonly id="ejemploUno">
+                    <div class="grid-container">
+                            <div class="item1">Header</div>
+                            <div class="item2">Menu</div>
+                            <div class="item3">Main</div>  
+                            <div class="item4">Right</div>
+                            <div class="item5">Footer</div>
+                          </div>
+                          
+            </textarea>
+            <h4>CSS</h4>
+            <textarea readonly id="ejemploUno">
+
+                .item1 { grid-area: header;}
+                .item2 { grid-area: menu; }
+                .item3 { grid-area: main; }
+                .item4 { grid-area: right; }
+                .item5 { grid-area: footer; }
+
+                .grid-container {
+                display: grid;
+                grid-template-areas:
+                    'header header header header header header'
+                    'menu main main main right right'
+                    'menu footer footer footer footer footer';
+                grid-gap: 10px;
+                background-color: #2196F3;
+                padding: 10px;
+                }
+                div {
+                background-color: rgba(255, 255, 255, 0.8);
+                text-align: center;
+                padding: 20px 0;
+                font-size: 30px;
+                }
+                            </textarea>
+            <h4>Output</h4>
+            <div class="grid-container">
+                    <div class="item1">Header</div>
+                    <div class="item2">Menu</div>
+                    <div class="item3">Main</div>  
+                    <div class="item4">Right</div>
+                    <div class="item5">Footer</div>
+            </div>
+
+        </main>
+        <aside>
+            <div class="vertical-menu">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 4</a>
+            </div>
+        </aside>
+        <footer>
+            <p>Posted by: Ana Carolina Justiniano</p>
+            <p>Contact information: <a href="mailto:carolinajustinianoguzman@gmail.com">carolinajustinianoguzman@gmail.com</a></p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
