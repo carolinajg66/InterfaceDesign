@@ -1,16 +1,16 @@
-
+/*GRID-EXAMPLE GRID LAYOUT*********************************************************************/
 .item1 { grid-area: header;}
-.item2 { grid-area: menu; }
+.item2 { grid-area: menus; }
 .item3 { grid-area: main; }
-.item4 { grid-area: right; }
+.item4 { grid-area: rights; }
 .item5 { grid-area: footer; }
 
 .grid-container {
   display: grid;
   grid-template-areas:
     'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
+    'menus main main main rights rights'
+    'menus footer footer footer footer footer';
   grid-gap: 10px;
   background-color: #263140;
   padding: 10px;
@@ -20,4 +20,107 @@
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
-  }
+}
+/* END GRID-EXAMPLE GRID LAYOUT**********************************************************************/
+
+/*GRID LAYOUT RESPONSIVE******************************/
+@media screen and (max-width : 760px){
+.grid-container{
+  grid-template-areas:
+  'header '
+  'menus '
+  'main'
+  'rights'
+  'footer';
+
+}
+}
+/********************************************************/ 
+
+/*EXAMPLES  *****************************************************************************************/
+#ejemploUno{
+  width: 700px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+#ejemploDos{
+  width: 700px;
+  height: 130px;
+  border: 1px solid black;
+}
+#ejemploTres{
+  width: 800px;
+  height: 120px;
+  border: 1px solid black;
+}
+#ejemploCuatro{
+  width: 700px;
+  height: 150px;
+  border: 1px solid black;
+}
+#ejemploCinco{
+  width: 700px;
+  height: 400px;
+  border: 1px solid black;
+}
+/*END EXAMPLES **************************************************************************************/
+
+/*BOX MODEL *****************************************************************************************/
+#boxModel{
+  width: 320px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0; 
+}
+
+/*END BOX MODEL *************************************************************************************/
+
+/*FORMS *********************************************************************************************/
+#formsExampleOne input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+#formsExampleTwo input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid red;
+}
+
+/*END FORMS*******************************************************************************************/
+
+/*MENUS **********************************************************************************************/
+#menusExample{
+  display: block;
+
+}
+
+/*END MENUS*******************************************************************************************/
+
+/*LIST **********************************************************************************************/
+ul.uno li{
+  margin: 20px;
+  display: list-item;
+  float: none; 
+  list-style-type: circle;
+}
+ul.dos li{
+ margin: 20px;
+ display: list-item;
+ float: none; 
+ list-style-type: square;
+
+}
+ol.tres li{
+  margin: 20px;
+  display: list-item;
+  float: none; 
+  list-style-type: upper-roman;
+}
+/*END LIST*********************************************************************************************/
+
