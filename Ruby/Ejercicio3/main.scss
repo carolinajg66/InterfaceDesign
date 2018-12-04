@@ -30,16 +30,17 @@ transition: $time;
 }
 
 @mixin transform($transformation) {
-transform: $transformation;
--webkit-transform: $transformation;
--moz-transform: $transformation;
--ms-transform: $transformation;
--o-transform: $transformation;  
+    transform: $transformation;
+    -webkit-transform: $transformation;
+    -moz-transform: $transformation;
+    -ms-transform: $transformation;
+    -o-transform: $transformation;  
 }
 
 @mixin photo-content {
-object-fit: cover;
+    object-fit: cover;
 }
+$stripe-properties: to bottom, 15%, blue, white;
   //Add your own mixins here
 .notecard {
     width: 300px;
@@ -80,6 +81,7 @@ object-fit: cover;
         .definition {
         width: 100%;
         height: 100%;
+        @include stripes($stripe-properties...);
             .photo {
                 width: 60%;
                 margin: 0px auto;  

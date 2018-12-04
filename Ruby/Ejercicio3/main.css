@@ -63,6 +63,7 @@
 .notecard .back .definition {
   width: 100%;
   height: 100%;
+  background: repeating-linear-gradient(to bottom, white, white 14%, blue 1%, white 15%);
 }
 
 .notecard .back .definition .photo {
