@@ -2,7 +2,17 @@ $width: 250px;
 //$lagoon-blue: #62fdca;
 $lagoon-blue: fade-out(#62fdca, 0.5);
 
-
+@each $item in $list {
+    .#{$item} {
+    background: $item;
+    }
+   }
+@for $i from 1 through $total {
+.ray:nth-child(#{$i}) {
+//background: blue;
+background: adjust-hue(blue, $i * $step);
+}
+}
 .math {
     width: $width;
     text-align: center;
@@ -10,7 +20,8 @@ $lagoon-blue: fade-out(#62fdca, 0.5);
     color: red + blue;
     height: $width/6;
     line-height: $width/6;
-    //border-radius: ;
+    font-size: $width/6/2;
+    border-radius: 1/30th ;
 }
 
 // For Loops ///////////////////
@@ -20,4 +31,5 @@ $step: 360deg / $total; //Used to compute the hue based on color-wheel
 .ray {
  height: 30px;
 }
+
 //Add your for-loop here:
