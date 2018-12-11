@@ -1,4 +1,8 @@
-
+.slide-left {
+    position: relative;
+    left: 50%;
+    @include slide-left;
+}
 .element {
     position: absolute;
     top: 15%;

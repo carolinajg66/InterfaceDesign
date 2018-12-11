@@ -36,6 +36,13 @@
   }
 }
 
+.slide-left {
+  position: relative;
+  left: 50%;
+  animation: slide-left 5s;
+  -webkit-animation: slide-left 5s;
+}
+
 .element {
   position: absolute;
   top: 15%;

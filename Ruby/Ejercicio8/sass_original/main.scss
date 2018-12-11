@@ -9,11 +9,6 @@ body {
   padding-top: 5%;
   background-color: #F1F2F3;
 }
-.slide-left {
-  position: relative;
-  left: 50%;
-  @extend slide-left;
-}
 
 h3 {
   color: $blue;
