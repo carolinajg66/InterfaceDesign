@@ -1,1 +1,18 @@
- 
+.slide-left {
+    position: relative;
+    left: 50%;
+    @include slide-left;
+}
+.element {
+    position: absolute;
+    top: 15%;
+    left: 46%;
+    animation-name: appear;
+    animation-duration: 4s;
+}
+  
+#sass-logo {
+    width: 100px;
+    fill: white;
+}
+  

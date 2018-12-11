@@ -1,1 +1,37 @@
- 
+@mixin slide-left{
+    animation: slide-left 5s;
+    -webkit-animation: slide-left 5s;
+  }
+@keyframes slide-left {
+    from {
+        left: 20%;
+    }
+    to {
+        left: 50%;
+    }
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes slide-left {
+    from {
+        left: 20%;
+    }
+    to {
+        left: 50%;
+    }
+}
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

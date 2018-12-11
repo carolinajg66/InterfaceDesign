@@ -1,29 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-body {
-  padding-top: 5%;
-  background-color: #F1F2F3;
-}
-
-.slide-left {
-  position: relative;
-  left: 50%;
-  animation: slide-left 5s;
-  -webkit-animation: slide-left 5s;
-}
-
-h3 {
-  color: #204056;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 0.183em;
-  line-height: 1.4;
-  position: relative;
-  padding-top: 2%;
-  left: -6.3%;
-}
-
 @keyframes slide-left {
   from {
     left: 20%;
@@ -43,8 +18,29 @@ h3 {
   }
 }
 
-circle {
-  opacity: 1;
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.slide-left {
+  position: relative;
+  left: 50%;
+  animation: slide-left 5s;
+  -webkit-animation: slide-left 5s;
 }
 
 .element {
@@ -62,21 +58,25 @@ circle {
   fill: white;
 }
 
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+body {
+  padding-top: 5%;
+  background-color: #F1F2F3;
 }
 
-@-webkit-keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+h3 {
+  color: #204056;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.183em;
+  line-height: 1.4;
+  position: relative;
+  padding-top: 2%;
+  left: -6.3%;
+}
+
+circle {
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */
