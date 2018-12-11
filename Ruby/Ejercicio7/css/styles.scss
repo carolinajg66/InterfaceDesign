@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@import "mixins.scss";
+
+@font-face {
+  font-family: DorovarFLF-Carolus;
+  src: url("DorovarFLF-Carolus.ttf");
+}
+
+@font-face{
+    font-family: DorovarFLF-Carolus;
+    src: 'DorovarFLF-Carolus.ttf'
+}
+
+$color1: #580101;
+$font_familiy1:DorovarFLF-Carolus;
+$width:923px;
+
+
+body {
+  width: $width;
+  background-color: #fcc76b;
+  margin: 0px auto; }
+
+header {
+  background-image: url(../img/logo_web.png);
+  height: 177px;
+  font-family:$font_familiy1;
+  position: relative;
+    /*la inmediata regla anterior y las tres primeras del h1,
+son para posicionar el texto de la cabecera a la parte inferior.
+Necesitamos posicionar relativamente al header para que h1 lo coja como referencia, sinó, cogeria al body*/ 
+    h1 {
+        position: absolute;
+        bottom: 4px;
+        margin: 0em;
+        margin-left: 6em;
+        color: $color1; 
+    }
+}
+
+.menu {
+ display: table;
+ width: $width;
+ font-family:$font_familiy1;
+ border-spacing: 5px; 
+
+    .row {
+    display: table-row; 
+
+        .cell {
+            display: table-cell;
+            text-align: center;
+            width: 33%; 
+            a {
+                text:{
+                    transform: uppercase;
+                    decoration: none;
+                }
+               
+                color: $color1;
+                &:hover {
+                    display: none; 
+                }
+            }
+        }
+    }
+
+}
+#content {
+background-color: #FFFFFF; 
+    p {
+        margin: 0em 1em;
+        @include content_p(3,10px);
+    }
+}
+
+
+
