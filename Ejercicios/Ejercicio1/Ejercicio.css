@@ -1,0 +1,33 @@
+div {
+  border: 1px white;
+}
+
+header {
+  background-color: green;
+}
+
+section {
+  background-color: red;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+section nav {
+  background-color: purple;
+}
+
+section #content_primero div {
+  background-color: orange;
+}
+
+section #content_segundo div {
+  background-color: blue;
+}
+
+footer {
+  background-color: green;
+}
+/*# sourceMappingURL=Ejercicio.css.map */
