@@ -4,10 +4,12 @@ div {
 
 header {
   background-color: green;
+  height: 20px;
 }
 
 section {
   background-color: red;
+  height: 20px;
 }
 
 p {
@@ -17,17 +19,21 @@ p {
 
 section nav {
   background-color: purple;
+  height: 20px;
 }
 
 section #content_primero div {
   background-color: orange;
+  height: 20px;
 }
 
 section #content_segundo div {
   background-color: blue;
+  height: 20px;
 }
 
 footer {
   background-color: green;
+  height: 20px;
 }
 /*# sourceMappingURL=Ejercicio.css.map */

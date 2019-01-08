@@ -1,0 +1,19 @@
+div {
+  border: 3px solid white;
+  height: 60px;
+}
+
+header {
+  border: 3px solid white;
+  background-color: aqua;
+  height: 60px;
+}
+
+section {
+  background-color: purple;
+}
+
+footer {
+  background-color: blue;
+}
+/*# sourceMappingURL=Ejercicio3.css.map */
