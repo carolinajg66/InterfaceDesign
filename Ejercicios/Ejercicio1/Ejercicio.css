@@ -1,39 +1,35 @@
-div {
+header {
+  background-color: green;
+  height: 30px;
   border: 1px white;
 }
 
-header {
-  background-color: green;
-  height: 20px;
-}
-
-section {
+aside {
   background-color: red;
-  height: 20px;
+  border: 1px white;
 }
 
-p {
-  margin: 0;
-  padding: 0;
+section div nav {
+  background-color: pink;
+  height: 30px;
+  border: 1px white;
 }
 
-section nav {
-  background-color: purple;
-  height: 20px;
-}
-
-section #content_primero div {
+section div .naranja {
   background-color: orange;
-  height: 20px;
+  height: 30px;
+  border: 1px white;
 }
 
-section #content_segundo div {
+section div .azul {
   background-color: blue;
-  height: 20px;
+  height: 30px;
+  border: 1px white;
 }
 
 footer {
   background-color: green;
-  height: 20px;
+  height: 30px;
+  border: 1px white;
 }
 /*# sourceMappingURL=Ejercicio.css.map */

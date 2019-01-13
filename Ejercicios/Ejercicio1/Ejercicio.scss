@@ -1,43 +1,41 @@
-$color:green, pink, orange, blue, red;
 
-$color1:green;
-div{
-   border: 1px white;
-}
 header{
     background-color: $color1;
-    height: 20px;
+    height: 30px;
+    border: 1px white;
 }
-section{
+
+aside{
     background-color: red;
-    height: 20px;
-}
-p{
-    margin: 0;
-    padding: 0;
+    border: 1px white;
+    
 }
 section{
  
-    nav{
-        background-color: purple;
-        height: 20px;
+    div nav{
+        background-color: pink;
+        height: 30px;
+        border: 1px white;
        
     }
-    #content_primero  div{
+    div .naranja{
      
         background-color: orange;
-        height: 20px;
+        height: 30px;
+        border: 1px white;
        
 
     }
-    #content_segundo div{
+    div .azul{
       
         background-color: blue;
-        height: 20px;
+        height: 30px;
+        border: 1px white;
       
     }
 }
 footer{
     background-color: $color1;
-    height: 20px;
+    height: 30px;
+    border: 1px white;
 }
