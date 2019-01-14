@@ -1,25 +1,32 @@
-.container-fluid div {
-  min-height: 50px;
-}
-
 div {
   border: 1px solid white;
 }
 
-.primero {
-  color: red;
-  background-color: beige;
+#rosa {
+  background-color: pink;
 }
 
-@media screen and (min-width: 768px) {
-  .primero {
-    background-color: aqua;
-  }
+#azul {
+  background-color: blue;
 }
 
-@media screen and (min-width: 992px) {
-  .primero {
-    background-color: green;
-  }
+#morado {
+  background-color: purple;
+}
+
+#verde {
+  background-color: green;
+}
+
+#naranja {
+  background-color: orange;
+}
+
+#rojo {
+  background-color: red;
+}
+
+#amarillo {
+  background-color: yellow;
 }
 /*# sourceMappingURL=Ejercicio2.css.map */

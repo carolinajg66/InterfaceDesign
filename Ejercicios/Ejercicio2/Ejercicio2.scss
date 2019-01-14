@@ -1,24 +1,31 @@
-.container-fluid div {
-    min-height: 50px;
-  }
-  
-  div {
-    border: 1px solid white;
-  }
-  
-  .primero {
-    color: red;
-    background-color: beige;
-  }
-  
-  @media screen and (min-width: 768px) {
-    .primero {
-      background-color: aqua;
-    }
-  }
-  
-  @media screen and (min-width: 992px) {
-    .primero {
-      background-color: green;
-    }
-  }
+div {
+  border: 1px solid white;
+}
+
+#rosa{
+  background-color: pink;
+}
+
+#azul{
+  background-color: blue;
+}
+
+#morado{
+  background-color: purple;
+}
+
+#verde{
+  background-color: green;
+}
+#naranja{
+  background-color: orange;
+}
+
+#rojo{
+  background-color: red;
+}
+
+#amarillo{
+  background-color: yellow;
+}
+
