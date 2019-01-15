@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <a class="navbar-brand" href="#">DIW Course</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Contact</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <header>
+        <h1>Usign Components</h1>
+    </header>
+    <hr>
+
+    <section>
+        <h2>Buttons</h2>
+        <h3>By purpose</h3>
+        <h4>inside a DIV btn-group</h4>
+        <div class="btn-group">
+            <button type="button" class="btn btn-info">Information</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-link">Link</button>
+            <button type="button" class="btn btn-default">Default</button>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-success">Success</button>
+
+        </div>
+
+        <h4>Without btn-group</h4>
+
+        <button type="button" class="btn btn-info">Information</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-link">Link</button>
+        <button type="button" class="btn btn-default">Default</button>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-success">Success</button>
+
+        <h4>By size</h4>
+        <button type="button" class="btn btn-info btn-lg ">Large</button>
+        <button type="button" class="btn btn-warning">Without size</button>
+        <button type="button" class="btn btn-danger btn-sm">Small</button>
+
+        <h4>Adding icons(FALTA)</h4>
+        <button><span class="oi oi-align-right"></span></button>
+        <span class="oi oi-align-right"></span>
+        <span class="oi" data-glyph="align-right"></span>
+        <hr>
+
+        <h4>Dropdown Menu(FALTA)</h4>
+        <br>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Dropdown button
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </div>
+        <hr>
+        <h4>Forms</h4>
+        <form>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationDefault01">First name</label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="First name" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationDefault02">Last name</label>
+                    <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationDefaultUsername">Username</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                        </div>
+                        <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username"
+                            aria-describedby="inputGroupPrepend2" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationDefault03">Email</label>
+                    <input type="text" class="form-control" id="validationDefault03" placeholder="Email" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="validationDefault03">Password</label>
+                    <input type="text" class="form-control" id="validationDefault03" placeholder="Password" required>
+                </div>
+
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationDefault03">City</label>
+                    <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="validationDefault04">State</label>
+                    <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="validationDefault05">Zip</label>
+                    <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3 form-group">
+                    <label>Gender</label>
+                    <label class="radio-inline"> <input type="radio" name="gender">Female</label>
+                    <label class="radio-inline"><input type="radio" name="gender">Male</label>
+                </div>
+                <div class="col-md-6 mb-3 form-group">
+                    <div class="form-check ">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                        <label class="form-check-label" for="invalidCheck2">
+                            Agree to terms and conditions
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="offset-md-4">
+                    <button class=" btn btn-primary" type="submit">Submit form</button>
+                </div>
+                <div class=" mr-md-3 col-md-6 mb-3">
+                    <button class=" btn btn-primary" type="reset">Delete form</button>
+                </div>
+            </div>
+        </form>
+        <hr>
+        <h4>dddd</h4>
+
+    </section>
+
+    <footer>
+
+        <div class="col-12 col-sm-12 col-md-6">footer 1</div>
+
+    </footer>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
