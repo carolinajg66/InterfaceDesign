@@ -70,10 +70,12 @@
         <button type="button" class="btn btn-danger btn-sm">Small</button>
 
         <h4>Adding icons(FALTA)</h4>
-        https://useiconic.com/open
-        <button><span class="oi oi-align-right"></span></button>
-        <span class="oi oi-align-right"></span>
-        <span class="oi" data-glyph="align-right"></span>
+        <button type="button" class="btn btn-default btn-sm">
+            <span class="glyphicon glyphicon-align-left"></span> 
+          </button>
+
+
+
         <hr>
 
         <h4>Dropdown Menu(FALTA)</h4>
@@ -164,7 +166,56 @@
             </div>
         </form>
         <hr>
-        <h4>dddd</h4>
+        <h4>The tab JavaScript plugin for List Group</h4>
+        <hr>
+        <h4>The tab JavaScript plugin for Navs</h4>
+        <div class="container">
+            <ul class="nav nav-tabs">
+              <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+              <li><a data-toggle="tab" href="#menu1"> Menu 1 </a></li>
+              <li><a data-toggle="tab" href="#menu2"> Menu 2 </a></li>
+              <li><a data-toggle="tab" href="#menu3"> Menu 3 </a></li>
+            </ul>
+          
+            <div class="tab-content">
+              <div id="home" class="tab-pane fade in active">
+                <h3>HOME</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div id="menu1" class="tab-pane fade">
+                <h3>Menu 1</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <div id="menu2" class="tab-pane fade">
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              </div>
+              <div id="menu3" class="tab-pane fade">
+                <h3>Menu 3</h3>
+                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <script>
+          $(document).ready(function(){
+            $(".nav-tabs a").click(function(){
+              $(this).tab('show');
+            });
+            $('.nav-tabs a').on('shown.bs.tab', function(event){
+              var x = $(event.target).text();         // active tab
+              var y = $(event.relatedTarget).text();  // previous tab
+              $(".act span").text(x);
+              $(".prev span").text(y);
+            });
+          });
+          </script>
+          <hr>
+          <h4>Progress Bar</h4>
+
+          
+          <hr>
 
     </section>
 
@@ -183,6 +234,9 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
