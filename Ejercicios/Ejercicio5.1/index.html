@@ -13,7 +13,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info sticky-top">
         <a class="navbar-brand" href="#">DIW Course</a>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -34,6 +34,7 @@
             </form>
         </div>
     </nav>
+ 
     <header>
         <h1>Usign Components</h1>
     </header>
@@ -78,7 +79,7 @@
 
         <hr>
 
-        <h4>Dropdown Menu(FALTA)</h4>
+        <h3>Dropdown Menu</h3>
         <br>
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
@@ -87,14 +88,19 @@
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item text-secondary" >First Group</a>
+                <a class="dropdown-item" href="#">Option 1</a>
+                <a class="dropdown-item" href="#">Option 2</a>
+                <a class="dropdown-item" href="#">Option 3</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item text-secondary" >Second Group</a>
+                <a class="dropdown-item" href="#">Normal</a>
+                <a class="dropdown-item active" href="#">Active</a>
+                <a class="dropdown-item disabled" href="#">Disabled</a>
             </div>
         </div>
         <hr>
-        <h4>Forms</h4>
+        <h3>Forms</h3>
         <form>
             <div class="form-row">
                 <div class="col-md-4 mb-3">
@@ -166,65 +172,123 @@
             </div>
         </form>
         <hr>
-        <h4>The tab JavaScript plugin for List Group</h4>
-        <hr>
-        <h4>The tab JavaScript plugin for Navs</h4>
-        <div class="container">
-            <ul class="nav nav-tabs">
-              <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-              <li><a data-toggle="tab" href="#menu1"> Menu 1 </a></li>
-              <li><a data-toggle="tab" href="#menu2"> Menu 2 </a></li>
-              <li><a data-toggle="tab" href="#menu3"> Menu 3 </a></li>
-            </ul>
-          
-            <div class="tab-content">
-              <div id="home" class="tab-pane fade in active">
-                <h3>HOME</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </div>
-              <div id="menu1" class="tab-pane fade">
-                <h3>Menu 1</h3>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
-              <div id="menu2" class="tab-pane fade">
-                <h3>Menu 2</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-              </div>
-              <div id="menu3" class="tab-pane fade">
-                <h3>Menu 3</h3>
-                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-              </div>
+
+        <h4>The Tab JavaScript plugin for List Group </h4>
+        <div class="row">
+            <div class="col-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+                        href="#list-home" role="tab" aria-controls="home">Home</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile"
+                        role="tab" aria-controls="profile">Profile</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages"
+                        role="tab" aria-controls="messages">Popover.js</a>
+                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings"
+                        role="tab" aria-controls="settings">Settings</a>
+                </div>
             </div>
-          </div>
-          <hr>
+            <div class="col-8">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">This
+                        is the home tab of a total of hour</div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="card-link">One link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                        <button type="button" class="btn btn-lg btn-success" data-toggle="popover" title="Popover title"
+                            data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle
+                            popover</button>
+                    </div>
+                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" tabindex="-1" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-          <script>
-          $(document).ready(function(){
-            $(".nav-tabs a").click(function(){
-              $(this).tab('show');
-            });
-            $('.nav-tabs a').on('shown.bs.tab', function(event){
-              var x = $(event.target).text();         // active tab
-              var y = $(event.relatedTarget).text();  // previous tab
-              $(".act span").text(x);
-              $(".prev span").text(y);
-            });
-          });
-          </script>
-          <hr>
-          <h4>Progress Bar</h4>
+        <hr>
+        <h4>The Tab JavaScript plugin for Navs </h4>
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                    aria-controls="nav-home" aria-selected="true">Home</a>
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                    aria-controls="nav-profile" aria-selected="false">Sass</a>
+                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                    aria-controls="nav-contact" aria-selected="false">bootstrap</a>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">This is
+                the home the tab of the set
+                of Navs. Here you can load different content and shown only the one you are interested in.
+                Separated by themes.
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Sass is the
+                most mature, stable,
+                and pwerful professional grade CSS extendion language in the world. </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Build
+                responsive, mobile-first projects on the web
+                with the world´s most populat front-end comoponent library.
+                bootstrap is a open source toolkit for developing with HTML, CSS, and JS.
+                Quickly prototpe your ideas or build your entire app with our Sass variables and mixins,
+                responsive grid system, extendive prebuilt components, and powerful plugins buils on jQuery.
+            </div>
+        </div>
+        <hr>
+        <h4>Progress Bar</h4>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated " style="width:50%">50%</div><br>
+        </div>
+        <br>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:75%">75%</div>
+        </div>
 
-          
-          <hr>
 
     </section>
+    <br>
+    <br>
+    <br>
 
-    <footer>
+  
+<footer class="page-footer font-small bg-info fixed-bottom">
 
-        <div class="col-12 col-sm-12 col-md-6">footer 1</div>
-
-    </footer>
-
+  
+    <div class="footer-copyright text-center py-3">@ IES Abastos 2019
+     
+    </div>
+   
+  
+  </footer>
+ 
 
     </div>
 
